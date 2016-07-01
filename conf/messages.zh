@@ -1,0 +1,4 @@
+auth.unknown = 无效用户： {0}
+password.unknown = 密码无效：{0}
+
+login.error = 用户名或密码无效
