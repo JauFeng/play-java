@@ -57,7 +57,7 @@ public class UserInfo extends Model {
      * 经验值
      */
     @Column(name = "exp", length = 11)
-    private int exp;
+    private int experience;
     /**
      * 签名
      */
@@ -145,12 +145,12 @@ public class UserInfo extends Model {
         this.level = level;
     }
 
-    public int getExp() {
-        return exp;
+    public int getExperience() {
+        return experience;
     }
 
-    public void setExp(int exp) {
-        this.exp = exp;
+    public void setExperience(int exp) {
+        this.experience = exp;
     }
 
     public String getSignature() {
@@ -211,7 +211,7 @@ public class UserInfo extends Model {
                 ", mailAddress='" + mailAddress + '\'' +
                 ", password='" + password + '\'' +
                 ", level=" + level +
-                ", exp=" + exp +
+                ", experience=" + experience +
                 ", signature='" + signature + '\'' +
                 ", portrait='" + portrait + '\'' +
                 ", sex=" + sex +

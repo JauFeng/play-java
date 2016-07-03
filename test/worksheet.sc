@@ -1,6 +1,3 @@
-import services.LoginService
-import utils.Utils
+import utils.RandomUtil
 
-val encode = Utils.encryptPassword("11111")
-
-Utils.validatePassword("11111", encode)
+RandomUtil.createRandomName("userid", 10003)

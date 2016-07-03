@@ -2,7 +2,6 @@ package controllers;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.Query;
-import models.Test;
 import play.mvc.*;
 
 import views.html.*;
@@ -24,16 +23,6 @@ public class HomeController extends Controller {
      */
     public Result index() {
         return ok(index.render("Your new application is ready."));
-    }
-
-    public Result func() {
-        List<Test> testList = Test.find.all();
-        List<Test> test30000 = Test.find.where()
-                .ilike("user_name", "test30000").findList();
-
-
-
-        return ok(test30000.stream().toString());
     }
 
 }

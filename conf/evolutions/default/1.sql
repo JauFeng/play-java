@@ -3,11 +3,6 @@
 
 # --- !Ups
 
-create table test (
-  user_name                     varchar(255),
-  age                           integer
-);
-
 create table t_user_info (
   user_id                       bigint auto_increment not null,
   role_name                     varchar(50) not null,
@@ -28,8 +23,6 @@ create table t_user_info (
 
 
 # --- !Downs
-
-drop table if exists test;
 
 drop table if exists t_user_info;
 
